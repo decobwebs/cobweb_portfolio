@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
+    <style>
+        /* Reset and basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #fdf2f2;
+            color: #333;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+
+        .error-container {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .error-container h1 {
+            font-size: 2rem;
+            color: #e53935;
+            margin-bottom: 1rem;
+        }
+
+        .error-container p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .error-container a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #e53935;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .error-container a:hover {
+            background-color: #d32f2f;
+        }
+    </style>
 </head>
 <body>
-    <h1>Something went wrong</h1>
-    <p>There was an issue sending your message. Please try again later.</p>
+    <div class="error-container">
+        <h1>Something Went Wrong</h1>
+        <p>There was an issue sending your message. Please try again later.</p>
+        <a href="index.html">Back to Home</a>
+    </div>
 </body>
 </html>
